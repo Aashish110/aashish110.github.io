@@ -5,6 +5,7 @@ This folder contains your GitHub Pages personal website.
 It is built from your CV and includes:
 
 - Your profile photo
+- Interactive drone flying animation while scrolling
 - Robotics and UAV-focused homepage
 - Skills section
 - Selected projects
@@ -76,25 +77,61 @@ Folder: /root
 13. Open:
    `https://aashish110.github.io`
 
-## How To Add Your Video Later
+## How To Add Your Videos Later
 
-1. Rename your video file to:
+The website now has space for:
+
+- One personal introduction video
+- Four research experiment videos
+
+### Option A: Upload MP4 Files To GitHub
+
+Use this only for small videos. Very large videos are better on YouTube.
+
+1. Rename your videos to these filenames:
 
 ```text
 aashish-intro.mp4
+uav-swarm-payload.mp4
+passenger-drone.mp4
+hybrid-drone-quadruped.mp4
+robotics-prototypes.mp4
 ```
 
-2. Upload it inside the `assets` folder.
-
-3. Keep the file path exactly like this:
+2. Upload them inside this folder:
 
 ```text
-assets/aashish-intro.mp4
+assets/videos/
 ```
 
-4. Commit the change.
+3. The final paths should look like this:
 
-The website will automatically show the video player when that file exists.
+```text
+assets/videos/aashish-intro.mp4
+assets/videos/uav-swarm-payload.mp4
+assets/videos/passenger-drone.mp4
+assets/videos/hybrid-drone-quadruped.mp4
+assets/videos/robotics-prototypes.mp4
+```
+
+4. Commit changes.
+
+The website will automatically replace the placeholders with video players.
+
+### Option B: Use YouTube Links
+
+Use this for many videos or large video files.
+
+1. Upload your video to YouTube.
+2. Set it as **Unlisted** if you do not want it searchable.
+3. Click **Share > Embed**.
+4. Copy the embed URL. It usually looks like:
+
+```text
+https://www.youtube.com/embed/VIDEO_ID
+```
+
+5. Send the link here, or paste it into the matching `data-youtube=""` field in `index.html`.
 
 ## Things You May Want To Edit
 
@@ -107,7 +144,8 @@ The website will automatically show the video player when that file exists.
 
 - `index.html` - website content
 - `styles.css` - design and layout
-- `script.js` - copy email button and automatic video loading
+- `script.js` - copy email button, drone scroll animation, and automatic video loading
 - `assets/aashish-sahu.png` - your profile photo
 - `assets/cv-aashish-sahu-2026.pdf` - your CV
+- `assets/videos/` - your research experiment videos
 - `.nojekyll` - tells GitHub Pages to publish the files as plain static files

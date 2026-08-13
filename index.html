@@ -21,6 +21,20 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
+    <div class="flight-layer" aria-hidden="true">
+      <div class="flight-trail"></div>
+      <div class="scroll-drone" data-scroll-drone>
+        <span class="drone-arm drone-arm-horizontal"></span>
+        <span class="drone-arm drone-arm-vertical"></span>
+        <span class="rotor rotor-top-left"></span>
+        <span class="rotor rotor-top-right"></span>
+        <span class="rotor rotor-bottom-left"></span>
+        <span class="rotor rotor-bottom-right"></span>
+        <span class="drone-core"></span>
+        <span class="drone-camera"></span>
+      </div>
+    </div>
+
     <header class="site-header" aria-label="Primary">
       <a class="brand" href="#top" aria-label="Aashish Sahu home">AS</a>
       <nav class="nav" aria-label="Main navigation">
@@ -64,11 +78,11 @@
 
       <section class="proof-strip" aria-label="Profile highlights">
         <div>
-          <strong>15</strong>
+          <strong>13</strong>
           <span>publications and conference papers</span>
         </div>
         <div>
-          <strong>30</strong>
+          <strong>29</strong>
           <span>patent and design filings</span>
         </div>
         <div>
@@ -221,22 +235,108 @@
       </section>
 
       <section class="video-section" id="video" aria-labelledby="video-title">
-        <div class="video-copy">
-          <p class="kicker">Intro video</p>
-          <h2 id="video-title">A short profile video will live here.</h2>
+        <div class="video-header">
+          <p class="kicker">Research videos</p>
+          <h2 id="video-title">Profile intro and experiment videos</h2>
           <p>
-            This space is reserved for a 60-90 second introduction video about
-            your research, projects, and future goals.
+            This section is ready for your project videos, experiment clips,
+            drone demonstrations, robot prototypes, and future research updates.
           </p>
         </div>
-        <div
-          class="video-frame"
-          id="profile-video"
-          data-video-src="assets/aashish-intro.mp4"
-          data-video-poster="assets/aashish-sahu.png"
-        >
-          <div class="play-mark" aria-hidden="true"></div>
-          <p>Intro video coming soon</p>
+
+        <div class="featured-video">
+          <div class="video-copy">
+            <h3>Personal research introduction</h3>
+            <p>
+              A 60-90 second overview of your robotics background, current
+              research, selected prototypes, and future goals.
+            </p>
+          </div>
+          <div
+            class="video-frame"
+            id="profile-video"
+            data-video-src="assets/videos/aashish-intro.mp4"
+            data-video-poster="assets/aashish-sahu.png"
+            data-video-label="Aashish Sahu profile introduction video"
+            data-youtube=""
+          >
+            <div class="play-mark" aria-hidden="true"></div>
+            <p>Intro video coming soon</p>
+          </div>
+        </div>
+
+        <div class="experiment-video-grid" aria-label="Research experiment videos">
+          <article class="experiment-video-card">
+            <div
+              class="video-frame"
+              data-video-src="assets/videos/uav-swarm-payload.mp4"
+              data-video-poster="assets/aashish-sahu.png"
+              data-video-label="UAV swarm payload transport experiment video"
+              data-youtube=""
+            >
+              <div class="play-mark" aria-hidden="true"></div>
+              <p>UAV swarm video coming soon</p>
+            </div>
+            <h3>UAV swarm payload transport</h3>
+            <p>
+              Outdoor collaborative payload transport using four quadcopters,
+              PX4, ROS2, RTK, and MQTT coordination.
+            </p>
+          </article>
+
+          <article class="experiment-video-card">
+            <div
+              class="video-frame"
+              data-video-src="assets/videos/passenger-drone.mp4"
+              data-video-poster="assets/aashish-sahu.png"
+              data-video-label="Passenger drone prototype experiment video"
+              data-youtube=""
+            >
+              <div class="play-mark" aria-hidden="true"></div>
+              <p>Passenger drone video coming soon</p>
+            </div>
+            <h3>Passenger drone prototype</h3>
+            <p>
+              Structure, electronics, and control system development for a
+              passenger-class multirotor platform.
+            </p>
+          </article>
+
+          <article class="experiment-video-card">
+            <div
+              class="video-frame"
+              data-video-src="assets/videos/hybrid-drone-quadruped.mp4"
+              data-video-poster="assets/aashish-sahu.png"
+              data-video-label="Hybrid drone quadruped experiment video"
+              data-youtube=""
+            >
+              <div class="play-mark" aria-hidden="true"></div>
+              <p>Hybrid robot video coming soon</p>
+            </div>
+            <h3>Hybrid drone-quadruped systems</h3>
+            <p>
+              Aerial-ground robotic systems for deployment, mobility,
+              manipulation, and environmental missions.
+            </p>
+          </article>
+
+          <article class="experiment-video-card">
+            <div
+              class="video-frame"
+              data-video-src="assets/videos/robotics-prototypes.mp4"
+              data-video-poster="assets/aashish-sahu.png"
+              data-video-label="Robotics prototypes experiment video"
+              data-youtube=""
+            >
+              <div class="play-mark" aria-hidden="true"></div>
+              <p>Prototype video coming soon</p>
+            </div>
+            <h3>Robotics and automation prototypes</h3>
+            <p>
+              Robotic arms, prosthetic hands, CNC machines, IoT systems,
+              smart devices, and rapid prototypes.
+            </p>
+          </article>
         </div>
       </section>
 
@@ -274,7 +374,7 @@
     </main>
 
     <footer class="footer">
-      <p>© <span id="year">2026</span> Aashish Sahu</p>
+      <p>&copy; <span id="year">2026</span> Aashish Sahu</p>
       <div class="footer-links">
         <a href="https://github.com/Aashish110">GitHub</a>
         <a href="https://www.linkedin.com/in/aashish-sahu">LinkedIn</a>
