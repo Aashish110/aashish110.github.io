@@ -1,22 +1,25 @@
 # RoboIITech website
 
-A static website for GitHub Pages. No installation, paid hosting, database or API key is needed. Open index.html to preview it.
+Five static pages for free GitHub Pages hosting: Home, Projects, Media, Workshops and Connect. No build service or API keys are required.
 
-## Content
+## Features
+- Robotics video background with pause/play, reduced-motion support and pointer-responsive light.
+- Aashish Sahu — Founder & CEO; PhD, Robotics & AI; IIT Hyderabad (wording supplied by owner).
+- Seven project demonstrations and twelve media posts, with category filters.
+- Three workshop topics with interest and campus-hosting enquiries. No dates, fees or confirmed seats are claimed.
+- Contact form prepares a message to the business WhatsApp number. The visitor must send it themselves; there is no website database or completed registration.
 
-- Robotics, AI/IoT and 3D printing enquiries.
-- Sections for professors, college students and schools.
-- Twelve accessible Instagram post/reel previews linked to their originals.
-- WhatsApp, telephone and Instagram contact links. The phone number comes from the public RoboIITech service poster.
+## Media
+Instagram images were collected from https://www.instagram.com/roboiitech/ on 6 September 2026 with the owner's permission. Access was limited to twelve public posts. Reels link to Instagram; local files are previews, not full videos. The founder portrait uses the owner's existing public portfolio asset.
 
-The media was collected from https://www.instagram.com/roboiitech/ on 6 September 2026. Instagram limited access to the full account; this is not a complete account export. Reel thumbnails are local images, and videos play on Instagram. No third-party trackers or Instagram embeds are loaded on this website.
+The illustrative homepage video is “High-speed catching system” by Z22:
+https://commons.wikimedia.org/wiki/File:High-speed_catching_system.webm
+Licensed CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/
+The original remote file is played muted and looped, with a CSS crop and colour overlay. Attribution appears below the hero. It is not presented as RoboIITech work. The source video and any adaptation of that video remain under CC BY-SA 4.0. This credit does not claim the creator endorses RoboIITech.
 
-## Free GitHub Pages hosting
+Video playback needs access to Wikimedia. Browsers may restrict autoplay; use Play background. Reduced-motion preferences prevent automatic playback.
 
-For an existing Pages site, upload this folder as `roboiitech` at the root of the published source. It should appear at `/roboiitech/` after deployment. Keep index.html, styles.css and assets together.
+## Update / hosting
+Keep all five HTML pages, styles.css, script.js and assets together in the repository's roboiitech folder. Existing GitHub Pages publishes this at /roboiitech/. The root portfolio is not changed.
 
-For a new public repository, upload this folder's contents to the root. In Settings > Pages, choose Deploy from a branch, select main and /(root), then Save. GitHub will show the website URL when the deployment finishes.
-
-Edit index.html for content and styles.css for design. Add original photos or video files to assets and update the relevant HTML. Keep large videos on a video hosting service so the site remains small.
-
-Before promoting the site, review the wording and contact number. Confirm any future services, prices or testimonials before adding them.
+Update content in the HTML files, styling in styles.css and interactions in script.js. Confirm workshop dates, fees, location and equipment requirements before announcing scheduled sessions. To use a RoboIITech video as the background, add its original file under assets and replace the video source and attribution as appropriate.
